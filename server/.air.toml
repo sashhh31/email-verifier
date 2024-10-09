@@ -1,0 +1,12 @@
+# .air.toml
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o tmp/main.exe ."
+bin = "tmp/main.exe"
+watch_dir = "."
+watch_ext = ["go"]
+
+[log]
+time_format = "15:04:05"
